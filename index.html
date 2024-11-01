@@ -12,9 +12,19 @@
     <!-- Font Awsome kit -->
     <script src="https://kit.fontawesome.com/2dc7357e59.js" crossorigin="anonymous"></script>
 
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
 </head>
 
-<body class=" bg-[#DDDDDD]">
+<body class=" bg-[#DDDDDD] font-manrope">
     <!-- Header -->
 
     <!-- Nav bar -->
@@ -119,7 +129,7 @@
 
             </div>
             <div class="row-span-4  sm:pt-24 mt-6 ">
-                <img class="h-full w-full " src="./assets/Rectangle.png" alt="">
+                <img class="" src="./assets/Rectangle.png" alt="">
             </div>
         </div>
 
@@ -232,7 +242,7 @@
                     </div>
 
                     <!-- Card 4: Secondary Content -->
-                    <div class="lg:flex border border-gray-400 gap-4 p-4 rounded-lg lg:col-span-3 h-auto lg:h-56">
+                    <div class="lg:flex border border-gray-400 gap-4 p-4 rounded-lg lg:col-span-2 h-auto lg:h-56">
                         <img src="./assets/img4.png" alt="Commercial" class="rounded-lg lg:object-cover lg:h-full">
                         <div class="flex flex-col gap-2 justify-between">
                             <h3 class="font-bold text-lg">Commercial</h3>
@@ -254,10 +264,50 @@
 
             </div>
         </section>
-    </main>
-    <!-- footer -->
-    <footer>
 
+
+    </main>
+    <div class="bg-[url('./assets/bg.jpg')] bg-cover bg-center py-12">
+        <div class="text-center pt-8">
+            <button class="btn btn-success rounded-2xl w-30 bg-[#ABEF5F80] border-none">
+                <i class="fa-solid fa-arrow-right-long"></i> Explore our Latest Works
+            </button>
+            <h1 class="font-bold text-4xl mt-4">Let’s Discuss Next Project</h1>
+            <p class="mt-2">The barn house captivates with its blend of rustic charm and modern sophistication,<br>
+                featuring weathered wood, sleek metal accents.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 mx-auto px-4 sm:px-8 lg:px-32 w-full lg:w-3/5 pt-11 gap-8">
+            <input type="text" placeholder="First Name*" class="input rounded-3xl input-bordered w-full" />
+            <input type="text" placeholder="Last Name*" class="input rounded-3xl input-bordered w-full" />
+            <input type="text" placeholder="Phone Number*" class="input rounded-3xl input-bordered w-full" />
+            <input type="text" placeholder="Email Address*" class="input rounded-3xl input-bordered w-full" />
+            <input type="text" placeholder="Write your Message here*"
+                class="input input-bordered rounded-3xl h-60 w-full lg:col-span-2" />
+            <button class="btn border-none rounded-3xl bg-[#ABEF5F] w-full lg:col-span-2">
+                Send Mail <i class="fa-solid fa-square-arrow-up-right ml-2"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-[#1C1C1C] text-[#E9E9E9] h-44">
+
+        <section class=" text-center">
+            <div>
+                <a class="btn btn-ghost text-xl"><i class="fa-solid fa-square-arrow-up-right"></i>Rinterio</a>
+                <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                    weathered wood, sleek metal accents.</p>
+            </div>
+            <div class="flex justify-center">
+                <nav class="grid grid-flow-col  gap-4">
+                    <a class="link link-hover">About us</a>
+                    <a class="link link-hover">Contact</a>
+                    <a class="link link-hover">Jobs</a>
+                    <a class="link link-hover">Press kit</a>
+                </nav>
+            </div>
+        </section>
     </footer>
 </body>
 
